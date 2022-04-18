@@ -16,7 +16,11 @@ public struct GenericButton: View {
     public var body: some View {
         Button(action: action, label: {
             Text(text.lowercased())
-                .withDefaultButtonFormating(color: color, font: .system(size: 25), size: 25)
+                .withDefaultButtonFormating(
+                    color: color,
+                    font: .system(size: self.size),
+                    size: self.size
+                )
         })
         .withPressableStyle()
         .padding()
