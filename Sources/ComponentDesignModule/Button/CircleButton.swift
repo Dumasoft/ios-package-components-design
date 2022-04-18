@@ -14,7 +14,6 @@ public struct CircleButton<Label: View>: View {
         action: @escaping () -> Void,
         @ViewBuilder label: () -> Label
     ) {
-        self.text = text
         self.colorText = colorText
         self.principalColor = principalColor
         self.secondaryColor = secondaryColor
