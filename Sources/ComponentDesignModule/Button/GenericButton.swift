@@ -18,7 +18,7 @@ public struct GenericButton: View {
             Text(text.lowercased())
                 .withDefaultButtonFormating(
                     color: color,
-                    font: .system(size: self.size),
+                    font: .system(size: CGFloat(self.size)),
                     size: self.size
                 )
         })
